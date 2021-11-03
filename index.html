@@ -80,13 +80,107 @@
         </div>
     </div>
 
+    <div id="reservation" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a Table </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <div class="col">
+                                    <label class="form-check-label col-sm-2" for="guests">Number of Guests
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input type="radio" name="guestsOptions" id="guests" value="1" checked>
+                                        1
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input type="radio" name="guestsOptions" id="guests" value="2" checked>
+                                        2
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input type="radio" name="guestsOptions" id="guests" value="3" checked>
+                                        3
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input type="radio" name="guestsOptions" id="guests" value="4" checked>
+                                        4
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input type="radio" name="guestsOptions" id="guests" value="5" checked>
+                                        5
+                                    </label>
+                                    <label class="form-check-label">
+                                        <input type="radio" name="guestsOptions" id="guests" value="6" checked>
+                                        6
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <div class="col">
+                                    <label class="form-check-label col-sm-2" for="guests">Section
+                                    </label>
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn bg-success active text-white">
+                                            <input type="radio" name="options" id="hatchback" autocomplete="off"
+                                                checked>
+                                            Non-smoking
+                                        </label>
+                                        <label class="btn bg-danger text-white">
+                                            <input type="radio" name="options" id="sedan" autocomplete="off"> Smoking
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <div class="col">
+                                    <label class="form-check-label col-sm-2" for="guests">Date and Time
+                                    </label>
+                                    <input type="date" class="col-sm-3" id="formGroup" placeholder="Date">
+                                    <input type="time" class="col-sm-3" id="formGroup" placeholder="Time">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row offset-2">
+                            <div class="col-sm-12">
+                                <div class="col">
+                                    <button type="button"
+                                        class="btn btn-primary align-items-center badge-secondary">Cancel</button>
+                                    <button type="button offset-1"
+                                        class="btn btn-primary align-items-center badge-primary">Reserve</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience.
+                        Our
                         lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col-12 col-sm align-self-center">
@@ -126,7 +220,8 @@
                             <img class="d-block img-fluid" src="img/buffet.png" alt="buffet">
                             <div class="carousel-caption d-none d-md-block">
                                 <h2>Weekend Grand Buffet<span class="badge badge-danger">NEW</span></h2>
-                                <p class="d-none d-md-block">Featuring mouthwatering combinations with a choice of five
+                                <p class="d-none d-md-block">Featuring mouthwatering combinations with a choice of
+                                    five
                                     different salads, six enticing appetizers, six main entrees and five choicest
                                     desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person
                                 </p>
@@ -198,7 +293,8 @@
                         <p class="d-none d-md-block">Featuring mouthwatering combinations with a choice of five
                             different salads, six enticing
                             appetizers,
-                            six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for
+                            six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All
+                            for
                             just
                             $19.99 per person </p>
                     </div>
@@ -227,88 +323,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div id="reservation" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="content">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Reserve a Table </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-row">
-                            <div class="form-group col-sm-12">
-                                <label class="form-check-label col-sm-2" for="guests">Number of Guests
-                                </label>
-                                <label class="form-check-label">
-                                    <input type="radio" name="guestsOptions" id="guests" value="1" checked>
-                                    1
-                                </label>
-                                <label class="form-check-label">
-                                    <input type="radio" name="guestsOptions" id="guests" value="2" checked>
-                                    2
-                                </label>
-                                <label class="form-check-label">
-                                    <input type="radio" name="guestsOptions" id="guests" value="3" checked>
-                                    3
-                                </label>
-                                <label class="form-check-label">
-                                    <input type="radio" name="guestsOptions" id="guests" value="4" checked>
-                                    4
-                                </label>
-                                <label class="form-check-label">
-                                    <input type="radio" name="guestsOptions" id="guests" value="5" checked>
-                                    5
-                                </label>
-                                <label class="form-check-label">
-                                    <input type="radio" name="guestsOptions" id="guests" value="6" checked>
-                                    6
-                                </label>
-                            </div>
-
-
-                            <div class="form-row">
-                                <div class="form-group col-sm-12">
-                                    <label class="form-check-label col-sm-2" for="guests">Section
-                                    </label>
-                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                        <label class="btn bg-success active text-white">
-                                            <input type="radio" name="options" id="hatchback" autocomplete="off"
-                                                checked> Non-smoking
-                                        </label>
-
-                                        <label class="btn bg-danger text-white">
-                                            <input type="radio" name="options" id="sedan" autocomplete="off"> Smoking
-                                        </label>
-
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group col-sm-12">
-                                        <label class="form-check-label col-sm-2" for="guests">Date and Time
-                                        </label>
-                                        <input type="text" class="col-sm-3" id="formGroup" placeholder="Date">
-                                        <input type="text" class="col-sm-3" id="formGroup" placeholder="Time">
-                                    </div>
-                                </div>
-
-                                <div class="form-group offset-2">
-                                    <button type="button"
-                                        class="btn btn-primary align-items-center badge-secondary">Cancel</button>
-                                    <button type="button offset-1"
-                                        class="btn btn-primary align-items-center badge-primary">Reserve</button>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-                </form>
-            </div>
-        </div>
-    </div>
     </div>
 
 
