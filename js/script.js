@@ -12,7 +12,7 @@ $("#carouselButton").click(function () {
 });
 
 $("#loginBtn").click(function () {
-    $("#loginModal").modal("show");
+    $("#login").modal("show");
 });
 
 $("#reservationBtn").click(function () {
